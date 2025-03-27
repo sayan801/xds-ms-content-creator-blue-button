@@ -6,7 +6,7 @@
   <templateId root="2.16.840.1.113883.10.20.22.1.2"/>
   <id root="2.16.840.1.113883.19.5.99999.1" extension="TT988"/>
   <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="34133-9" displayName="Summarization of Episode Note"/>
-  <effectiveTime value="20250328020386+0530"/>
+  <effectiveTime value="20250328020325+0530"/>
   <confidentialityCode displayName="Normal" code="N" codeSystem="2.16.840.1.113883.5.25" codeSystemName="Confidentiality Code"/>
   <languageCode code="en-US"/>
   <setId root="2.16.840.1.113883.19.5.99999.19" extension="sTT988"/>

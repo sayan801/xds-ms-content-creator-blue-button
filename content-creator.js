@@ -1,9 +1,10 @@
 var fs = require('fs');
 var bb = require('@amida-tech/blue-button');
 var bbg = require('@amida-tech/blue-button-generate');
+const { timeNow } = require('@amida-tech/blue-button-generate/lib/fieldLevel');
 
 // Load the C-CDA document
-var xmlString = fs.readFileSync('test-data/CCD_1.xml', 'utf-8');
+var xmlString = fs.readFileSync('template/CCDA_template.xml', 'utf-8');
 
 // Parse the C-CDA document to JSON
 var record = bb.parseString(xmlString);
@@ -18,6 +19,11 @@ console.log(record.data.demographics.name);
 var updatedXmlString = bbg.generateCCD(record);
 
 // Save the updated XML back to the file
-fs.writeFileSync('test-data/CCD_1_updated.xml', updatedXmlString, 'utf-8');
+const nowDate = Date.now();
 
-console.log('Demographics updated successfully!');
+fs.writeFileSync('output/CCDA_output_'+ nowDate +'.xml', updatedXmlString, 'utf-8');
+
+console.log('Patient Data pdated successfully!');
+
+console.log(updatedXmlString);
+
