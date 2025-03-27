@@ -1,7 +1,6 @@
 var fs = require('fs');
 var bb = require('@amida-tech/blue-button');
 var bbg = require('@amida-tech/blue-button-generate');
-const { timeNow } = require('@amida-tech/blue-button-generate/lib/fieldLevel');
 
 // Load the C-CDA document
 var xmlString = fs.readFileSync('template/CCDA_template.xml', 'utf-8');
