@@ -1,0 +1,16 @@
+{
+  "name": "xds-ms-content-creator-blue-button",
+  "version": "1.0.0",
+  "description": "A project for parsing and generating C-CDA documents using Blue Button libraries.",
+  "main": "content-creator.js",
+  "scripts": {
+    "start": "node content-creator.js",
+    "test": "echo \"No test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@amida-tech/blue-button": "^1.8.0",
+    "@amida-tech/blue-button-generate": "^1.5.10"
+  }
+}
