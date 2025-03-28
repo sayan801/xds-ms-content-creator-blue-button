@@ -1,0 +1,1562 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xmlns:cda="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc">
+  <realmCode code="US"/>
+  <typeId root="2.16.840.1.113883.1.3" extension="POCD_HD000040"/>
+  <templateId root="2.16.840.1.113883.10.20.22.1.1"/>
+  <templateId root="2.16.840.1.113883.10.20.22.1.2"/>
+  <id root="1.1.1.1.1.1.1.1.1" extension="Test CCDA"/>
+  <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="34133-9" displayName="Summarization of Episode Note"/>
+  <effectiveTime value="20250328130323+0530"/>
+  <confidentialityCode displayName="Normal" code="N" codeSystem="2.16.840.1.113883.5.25" codeSystemName="Confidentiality Code"/>
+  <languageCode code="en-US"/>
+  <versionNumber value="1"/>
+  <recordTarget>
+    <patientRole>
+      <id root="2.16.840.1.113883.4.1" extension="123-456-7890"/>
+      <addr use="HP">
+        <country>US</country>
+        <state>VA</state>
+        <city>Springfield</city>
+        <postalCode>22153</postalCode>
+        <streetAddressLine>100 Marshall Lane</streetAddressLine>
+      </addr>
+      <telecom value="tel:+1(571)555-0189" use="HP"/>
+      <patient>
+        <name use="L">
+          <family>Sengupta</family>
+          <given>Joysankar</given>
+          <given>Kumar</given>
+        </name>
+        <administrativeGenderCode code="M" codeSystem="2.16.840.1.113883.5.1" codeSystemName="HL7 AdministrativeGender" displayName="Male"/>
+        <birthTime value="19330316"/>
+        <maritalStatusCode code="M" displayName="Married" codeSystem="2.16.840.1.113883.5.2" codeSystemName="HL7 Marital Status"/>
+        <religiousAffiliationCode displayName="Roman Catholic" codeSystem="2.16.840.1.113883.5.1076" codeSystemName="HL7 Religious Affiliation"/>
+        <ethnicGroupCode displayName="Not Hispanic or Latino" codeSystem="2.16.840.1.113883.6.238" codeSystemName="Race and Ethnicity - CDC"/>
+        <raceCode displayName="White" codeSystem="2.16.840.1.113883.6.238" codeSystemName="Race and Ethnicity - CDC"/>
+        <languageCommunication>
+          <languageCode code="en"/>
+          <modeCode displayName="Expressed spoken" codeSystem="2.16.840.1.113883.5.60" codeSystemName="LanguageAbilityMode"/>
+        </languageCommunication>
+      </patient>
+    </patientRole>
+  </recordTarget>
+  <documentationOf typeCode="DOC">
+    <serviceEvent classCode="PCPR"/>
+  </documentationOf>
+  <component>
+    <structuredBody>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.22.2.6"/>
+          <templateId root="2.16.840.1.113883.10.20.22.2.6.1"/>
+          <code code="48765-2" displayName="Allergies, adverse reactions, alerts" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+          <title>Allergies, adverse reactions, alerts</title>
+          <text>
+            <table border="1" width="100%">
+              <thead>
+                <tr>
+                  <th>Substance</th>
+                  <th>Overall Severity</th>
+                  <th>Reaction</th>
+                  <th>Reaction Severity</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                </tr>
+                <tr>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                </tr>
+              </tbody>
+            </table>
+          </text>
+          <entry typeCode="DRIV">
+            <act classCode="ACT" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.30"/>
+              <id root="200b7b4e-dcc2-47d2-8bce-2ce612dd4647"/>
+              <code code="48765-2" displayName="Allergies, adverse reactions, alerts" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+              <statusCode code="active"/>
+              <effectiveTime>
+                <low value="19600101"/>
+              </effectiveTime>
+              <entryRelationship typeCode="SUBJ" inversionInd="true">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.7"/>
+                  <id root="4a51d40f-db9f-414a-b7cf-d3c40c00835a"/>
+                  <code code="ASSERTION" displayName="Assertion" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime nullFlavor="UNK"/>
+                  <value xsi:type="CD" code="416098002" displayName="drug allergy" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
+                    <originalText>
+                      <reference value="#reaction1"/>
+                    </originalText>
+                  </value>
+                  <participant typeCode="CSM">
+                    <participantRole classCode="MANU">
+                      <playingEntity classCode="MMAT">
+                        <code code="70618" displayName="Penicillin" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RXNORM">
+                          <originalText>
+                            <reference value="#reaction1"/>
+                          </originalText>
+                        </code>
+                      </playingEntity>
+                    </participantRole>
+                  </participant>
+                  <entryRelationship typeCode="SUBJ" inversionInd="true">
+                    <observation classCode="OBS" moodCode="EVN">
+                      <templateId root="2.16.840.1.113883.10.20.22.4.28"/>
+                      <code code="33999-4" displayName="Status" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                      <statusCode code="completed"/>
+                      <value xsi:type="CE" code="55561003" displayName="Active" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
+                    </observation>
+                  </entryRelationship>
+                  <entryRelationship typeCode="MFST" inversionInd="true">
+                    <observation classCode="OBS" moodCode="EVN">
+                      <templateId root="2.16.840.1.113883.10.20.22.4.9"/>
+                      <id root="0506c036-adfb-4e6e-b9e1-eea76177ead5"/>
+                      <code nullFlavor="UNK"/>
+                      <text>
+                        <reference value="#reaction1"/>
+                      </text>
+                      <statusCode code="completed"/>
+                      <effectiveTime>
+                        <low value="19600101"/>
+                      </effectiveTime>
+                      <value xsi:type="CD" code="404640003" displayName="Dizziness" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
+                      <entryRelationship typeCode="SUBJ" inversionInd="true">
+                        <observation classCode="OBS" moodCode="EVN">
+                          <templateId root="2.16.840.1.113883.10.20.22.4.8"/>
+                          <code code="SEV" displayName="Severity Observation" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode"/>
+                          <text>
+                            <reference value="#severity1"/>
+                          </text>
+                          <statusCode code="completed"/>
+                          <value xsi:type="CD" code="6736007" displayName="moderate" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
+                        </observation>
+                      </entryRelationship>
+                    </observation>
+                  </entryRelationship>
+                </observation>
+              </entryRelationship>
+            </act>
+          </entry>
+          <entry typeCode="DRIV">
+            <act classCode="ACT" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.30"/>
+              <id root="1857d9c8-b58f-43ef-adef-7b2999c92f5e"/>
+              <code code="48765-2" displayName="Allergies, adverse reactions, alerts" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+              <statusCode code="active"/>
+              <effectiveTime>
+                <low value="19400101"/>
+              </effectiveTime>
+              <entryRelationship typeCode="SUBJ" inversionInd="true">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.7"/>
+                  <id root="6af77782-e02b-41b5-b81f-9699432a3e1b"/>
+                  <code code="ASSERTION" displayName="Assertion" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime nullFlavor="UNK"/>
+                  <value xsi:type="CD" code="419199007" displayName="allergy to substance" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
+                    <originalText>
+                      <reference value="#reaction2"/>
+                    </originalText>
+                  </value>
+                  <participant typeCode="CSM">
+                    <participantRole classCode="MANU">
+                      <playingEntity classCode="MMAT">
+                        <code code="3729L8MA2C" displayName="Bee Pollen" codeSystem="2.16.840.1.113883.4.9" codeSystemName="UNII">
+                          <originalText>
+                            <reference value="#reaction2"/>
+                          </originalText>
+                        </code>
+                      </playingEntity>
+                    </participantRole>
+                  </participant>
+                  <entryRelationship typeCode="SUBJ" inversionInd="true">
+                    <observation classCode="OBS" moodCode="EVN">
+                      <templateId root="2.16.840.1.113883.10.20.22.4.28"/>
+                      <code code="33999-4" displayName="Status" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                      <statusCode code="completed"/>
+                      <value xsi:type="CE" code="55561003" displayName="Active" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
+                    </observation>
+                  </entryRelationship>
+                  <entryRelationship typeCode="MFST" inversionInd="true">
+                    <observation classCode="OBS" moodCode="EVN">
+                      <templateId root="2.16.840.1.113883.10.20.22.4.9"/>
+                      <id root="8a07406a-78e7-4484-b0f6-f8ad522cb36e"/>
+                      <code nullFlavor="UNK"/>
+                      <text>
+                        <reference value="#reaction2"/>
+                      </text>
+                      <statusCode code="completed"/>
+                      <effectiveTime>
+                        <low value="19400101"/>
+                      </effectiveTime>
+                      <value xsi:type="CD" code="417516000" displayName="Anaphylaxis due to substance" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
+                      <entryRelationship typeCode="SUBJ" inversionInd="true">
+                        <observation classCode="OBS" moodCode="EVN">
+                          <templateId root="2.16.840.1.113883.10.20.22.4.8"/>
+                          <code code="SEV" displayName="Severity Observation" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode"/>
+                          <text>
+                            <reference value="#severity2"/>
+                          </text>
+                          <statusCode code="completed"/>
+                          <value xsi:type="CD" code="24484000" displayName="severe" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
+                        </observation>
+                      </entryRelationship>
+                    </observation>
+                  </entryRelationship>
+                </observation>
+              </entryRelationship>
+            </act>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.22.2.1"/>
+          <templateId root="2.16.840.1.113883.10.20.22.2.1.1"/>
+          <code code="10160-0" displayName="History of medication use" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+          <title>History of medication use</title>
+          <text>
+            <table border="1" width="100%">
+              <thead>
+                <tr>
+                  <th>Medication Class</th>
+                  <th># fills</th>
+                  <th>Last fill date</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td/>
+                  <td/>
+                  <td/>
+                </tr>
+                <tr>
+                  <td/>
+                  <td/>
+                  <td/>
+                </tr>
+                <tr>
+                  <td/>
+                  <td/>
+                  <td/>
+                </tr>
+                <tr>
+                  <td/>
+                  <td/>
+                  <td/>
+                </tr>
+                <tr>
+                  <td/>
+                  <td/>
+                  <td/>
+                </tr>
+                <tr>
+                  <td/>
+                  <td/>
+                  <td/>
+                </tr>
+                <tr>
+                  <td/>
+                  <td/>
+                  <td/>
+                </tr>
+                <tr>
+                  <td/>
+                  <td/>
+                  <td/>
+                </tr>
+                <tr>
+                  <td/>
+                  <td/>
+                  <td/>
+                </tr>
+                <tr>
+                  <td/>
+                  <td/>
+                  <td/>
+                </tr>
+                <tr>
+                  <td/>
+                  <td/>
+                  <td/>
+                </tr>
+                <tr>
+                  <td/>
+                  <td/>
+                  <td/>
+                </tr>
+                <tr>
+                  <td/>
+                  <td/>
+                  <td/>
+                </tr>
+                <tr>
+                  <td/>
+                  <td/>
+                  <td/>
+                </tr>
+                <tr>
+                  <td/>
+                  <td/>
+                  <td/>
+                </tr>
+                <tr>
+                  <td/>
+                  <td/>
+                  <td/>
+                </tr>
+                <tr>
+                  <td/>
+                  <td/>
+                  <td/>
+                </tr>
+                <tr>
+                  <td/>
+                  <td/>
+                  <td/>
+                </tr>
+                <tr>
+                  <td/>
+                  <td/>
+                  <td/>
+                </tr>
+                <tr>
+                  <td/>
+                  <td/>
+                  <td/>
+                </tr>
+              </tbody>
+            </table>
+          </text>
+          <entry typeCode="DRIV">
+            <substanceAdministration classCode="SBADM" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
+              <id root="f51687b3-19dc-445d-a3aa-8d756276c89f"/>
+              <text>Lisinopril - 20mg by mouth once daily</text>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="20121101"/>
+                <high value="20121231"/>
+              </effectiveTime>
+              <effectiveTime xsi:type="PIVL_TS" institutionSpecified="true" operator="A">
+                <period value="24" unit="h"/>
+              </effectiveTime>
+              <routeCode code="C38288" displayName="oral" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="Medication Route FDA"/>
+              <doseQuantity value="1"/>
+              <administrationUnitCode code="C42998" displayName="tablet" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="Medication Route FDA"/>
+              <consumable>
+                <manufacturedProduct classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.23"/>
+                  <id nullFlavor="UNK"/>
+                  <manufacturedMaterial>
+                    <code code="314077" displayName="Lisinopril 20 MG Oral Tablet" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RXNORM">
+                      <originalText>Lisinopril - 20mg by mouth once daily<reference value="#medinfo1"/></originalText>
+                    </code>
+                  </manufacturedMaterial>
+                </manufacturedProduct>
+              </consumable>
+            </substanceAdministration>
+          </entry>
+          <entry typeCode="DRIV">
+            <substanceAdministration classCode="SBADM" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
+              <id root="23581045-ee58-4a16-9a4c-d722a43d93f8"/>
+              <text>Lasix - 40mg by mouth once daily</text>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="20121101"/>
+                <high value="20121231"/>
+              </effectiveTime>
+              <effectiveTime xsi:type="PIVL_TS" institutionSpecified="true" operator="A">
+                <period value="24" unit="h"/>
+              </effectiveTime>
+              <routeCode code="C38288" displayName="oral" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="Medication Route FDA"/>
+              <doseQuantity value="1"/>
+              <administrationUnitCode code="C42998" displayName="tablet" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="Medication Route FDA"/>
+              <consumable>
+                <manufacturedProduct classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.23"/>
+                  <id nullFlavor="UNK"/>
+                  <manufacturedMaterial>
+                    <code code="313988" displayName="Furosemide 40 MG Oral Tablet" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RXNORM">
+                      <originalText>Lasix - 40mg by mouth once daily<reference value="#medinfo2"/></originalText>
+                    </code>
+                  </manufacturedMaterial>
+                </manufacturedProduct>
+              </consumable>
+            </substanceAdministration>
+          </entry>
+          <entry typeCode="DRIV">
+            <substanceAdministration classCode="SBADM" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
+              <id root="becaa0c7-7916-4de3-b7cd-1b8be342087d"/>
+              <text>K-Dur - 10mEq/L by mouth once daily</text>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="20121101"/>
+                <high value="20121231"/>
+              </effectiveTime>
+              <effectiveTime xsi:type="PIVL_TS" institutionSpecified="true" operator="A">
+                <period value="24" unit="h"/>
+              </effectiveTime>
+              <routeCode code="C38288" displayName="oral" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="Medication Route FDA"/>
+              <doseQuantity value="1"/>
+              <administrationUnitCode code="C42927" displayName="TABLET, EXTENDED RELEASE" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="Medication Route FDA"/>
+              <consumable>
+                <manufacturedProduct classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.23"/>
+                  <id nullFlavor="UNK"/>
+                  <manufacturedMaterial>
+                    <code code="706459" displayName="K-Dur 10 MEQ Extended Release Tablet" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RXNORM">
+                      <originalText>K-Dur - 10mEq/L by mouth once daily<reference value="#medinfo3"/></originalText>
+                    </code>
+                  </manufacturedMaterial>
+                </manufacturedProduct>
+              </consumable>
+            </substanceAdministration>
+          </entry>
+          <entry typeCode="DRIV">
+            <substanceAdministration classCode="SBADM" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
+              <id root="f9fa3786-a767-4ca8-add4-72b61347aa0f"/>
+              <text>Norvasc - 10mg by mouth once daily</text>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="20121101"/>
+                <high value="20121231"/>
+              </effectiveTime>
+              <effectiveTime xsi:type="PIVL_TS" institutionSpecified="true" operator="A">
+                <period value="24" unit="h"/>
+              </effectiveTime>
+              <routeCode code="C38288" displayName="oral" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="Medication Route FDA"/>
+              <doseQuantity value="1"/>
+              <administrationUnitCode code="C42998" displayName="tablet" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="Medication Route FDA"/>
+              <consumable>
+                <manufacturedProduct classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.23"/>
+                  <id nullFlavor="UNK"/>
+                  <manufacturedMaterial>
+                    <code code="308135" displayName="Amlodipine 10 MG Oral Tablet" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RXNORM">
+                      <originalText>Norvasc - 10mg by mouth once daily<reference value="#medinfo4"/></originalText>
+                    </code>
+                  </manufacturedMaterial>
+                </manufacturedProduct>
+              </consumable>
+            </substanceAdministration>
+          </entry>
+          <entry typeCode="DRIV">
+            <substanceAdministration classCode="SBADM" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
+              <id root="4a55ddeb-5aa6-47f0-b455-da9b5f7f9c75"/>
+              <text>Zocor - 40mg by mouth once daily before bed</text>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="20121101"/>
+                <high value="20121231"/>
+              </effectiveTime>
+              <routeCode code="C38288" displayName="oral" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="Medication Route FDA"/>
+              <doseQuantity value="1"/>
+              <administrationUnitCode code="C42998" displayName="tablet" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="Medication Route FDA"/>
+              <consumable>
+                <manufacturedProduct classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.23"/>
+                  <id nullFlavor="UNK"/>
+                  <manufacturedMaterial>
+                    <code code="198211" displayName="Simvastatin 40 MG Oral Tablet" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RXNORM">
+                      <originalText>Zocor - 40mg by mouth once daily before bed<reference value="#medinfo5"/></originalText>
+                    </code>
+                  </manufacturedMaterial>
+                </manufacturedProduct>
+              </consumable>
+            </substanceAdministration>
+          </entry>
+          <entry typeCode="DRIV">
+            <substanceAdministration classCode="SBADM" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
+              <id root="e146441f-d8db-451b-9b0a-b95d19da358a"/>
+              <text>Lantus - 36 units once daily before bed</text>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="20121101"/>
+                <high value="20121231"/>
+              </effectiveTime>
+              <routeCode code="C38299" displayName="SUBCUTANEOUS" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="Medication Route FDA"/>
+              <doseQuantity value="0.36" unit="ml"/>
+              <administrationUnitCode code="C42945" displayName="INJECTION, SOLUTION" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="Medication Route FDA"/>
+              <consumable>
+                <manufacturedProduct classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.23"/>
+                  <id nullFlavor="UNK"/>
+                  <manufacturedMaterial>
+                    <code code="311041" displayName="Insulin Glargine 100 UNT/ML Injectable Solution" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RXNORM">
+                      <originalText>Lantus - 36 units once daily before bed<reference value="#medinfo6"/></originalText>
+                    </code>
+                  </manufacturedMaterial>
+                </manufacturedProduct>
+              </consumable>
+            </substanceAdministration>
+          </entry>
+          <entry typeCode="DRIV">
+            <substanceAdministration classCode="SBADM" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
+              <id root="2f673e36-79de-45a3-ae20-321e561d41f5"/>
+              <text>gliburide - 2.5mg by mouth once daily</text>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="20121101"/>
+                <high value="20121231"/>
+              </effectiveTime>
+              <effectiveTime xsi:type="PIVL_TS" institutionSpecified="true" operator="A">
+                <period value="24" unit="h"/>
+              </effectiveTime>
+              <routeCode code="C38288" displayName="oral" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="Medication Route FDA"/>
+              <doseQuantity value="1"/>
+              <administrationUnitCode code="C42998" displayName="tablet" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="Medication Route FDA"/>
+              <consumable>
+                <manufacturedProduct classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.23"/>
+                  <id nullFlavor="UNK"/>
+                  <manufacturedMaterial>
+                    <code code="861748" displayName="glyBURIDE 2.5 MG / metFORMIN hydrochloride 500 MG Oral Tablet" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RXNORM">
+                      <originalText>gliburide - 2.5mg by mouth once daily<reference value="#medinfo7"/></originalText>
+                    </code>
+                  </manufacturedMaterial>
+                </manufacturedProduct>
+              </consumable>
+            </substanceAdministration>
+          </entry>
+          <entry typeCode="DRIV">
+            <substanceAdministration classCode="SBADM" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
+              <id root="a47c03f4-7930-40cd-ad06-8ab82537c706"/>
+              <text>synthroid - 0.1mg by mouth once daily</text>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="20121101"/>
+                <high value="20121231"/>
+              </effectiveTime>
+              <effectiveTime xsi:type="PIVL_TS" institutionSpecified="true" operator="A">
+                <period value="24" unit="h"/>
+              </effectiveTime>
+              <routeCode code="C38288" displayName="oral" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="Medication Route FDA"/>
+              <doseQuantity value="1"/>
+              <administrationUnitCode code="C42998" displayName="tablet" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="Medication Route FDA"/>
+              <consumable>
+                <manufacturedProduct classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.23"/>
+                  <id nullFlavor="UNK"/>
+                  <manufacturedMaterial>
+                    <code code="892246" displayName="Levothyroxine Sodium 0.1 MG Oral Tablet" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RXNORM">
+                      <originalText>synthroid - 0.1mg by mouth once daily<reference value="#medinfo8"/></originalText>
+                    </code>
+                  </manufacturedMaterial>
+                </manufacturedProduct>
+              </consumable>
+            </substanceAdministration>
+          </entry>
+          <entry typeCode="DRIV">
+            <substanceAdministration classCode="SBADM" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
+              <id root="65fa772c-188d-489f-8f1a-1b5e8db732b3"/>
+              <text>Aleve - 220mg by mouth twice daily</text>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="20121101"/>
+                <high value="20121231"/>
+              </effectiveTime>
+              <effectiveTime xsi:type="PIVL_TS" institutionSpecified="true" operator="A">
+                <period value="12" unit="h"/>
+              </effectiveTime>
+              <routeCode code="C38288" displayName="oral" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="Medication Route FDA"/>
+              <doseQuantity value="1"/>
+              <administrationUnitCode code="C42998" displayName="tablet" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="Medication Route FDA"/>
+              <consumable>
+                <manufacturedProduct classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.23"/>
+                  <id nullFlavor="UNK"/>
+                  <manufacturedMaterial>
+                    <code code="1112231" displayName="Naproxen sodium 220 MG Oral Capsule" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RXNORM">
+                      <originalText>Aleve - 220mg by mouth twice daily<reference value="#medinfo9"/></originalText>
+                    </code>
+                  </manufacturedMaterial>
+                </manufacturedProduct>
+              </consumable>
+            </substanceAdministration>
+          </entry>
+          <entry typeCode="DRIV">
+            <substanceAdministration classCode="SBADM" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
+              <id root="cced9bbd-0aa1-4826-95ce-ca446d5fd16e"/>
+              <text>Ultram - 50mg by mouth four times daily as needed for joint pain</text>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="20121101"/>
+                <high value="20121231"/>
+              </effectiveTime>
+              <effectiveTime xsi:type="PIVL_TS" institutionSpecified="true" operator="A">
+                <period value="6" unit="h"/>
+              </effectiveTime>
+              <routeCode code="C38288" displayName="oral" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="Medication Route FDA"/>
+              <doseQuantity value="1"/>
+              <administrationUnitCode code="C42998" displayName="tablet" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="Medication Route FDA"/>
+              <consumable>
+                <manufacturedProduct classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.23"/>
+                  <id nullFlavor="UNK"/>
+                  <manufacturedMaterial>
+                    <code code="835603" displayName="traMADol hydrochloride 50 MG Oral Tablet" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RXNORM">
+                      <originalText>Ultram - 50mg by mouth four times daily as needed for joint pain<reference value="#medinfo10"/></originalText>
+                    </code>
+                  </manufacturedMaterial>
+                </manufacturedProduct>
+              </consumable>
+            </substanceAdministration>
+          </entry>
+          <entry typeCode="DRIV">
+            <substanceAdministration classCode="SBADM" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
+              <id root="f480e2a8-76ff-475c-95b9-effbabeff36b"/>
+              <text>Aspirin - 81mg by mouth once daily</text>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="20121101"/>
+                <high value="20121231"/>
+              </effectiveTime>
+              <effectiveTime xsi:type="PIVL_TS" institutionSpecified="true" operator="A">
+                <period value="24" unit="h"/>
+              </effectiveTime>
+              <routeCode code="C38288" displayName="oral" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="Medication Route FDA"/>
+              <doseQuantity value="1"/>
+              <administrationUnitCode code="C42998" displayName="tablet" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="Medication Route FDA"/>
+              <consumable>
+                <manufacturedProduct classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.23"/>
+                  <id nullFlavor="UNK"/>
+                  <manufacturedMaterial>
+                    <code code="308416" displayName="Aspirin 81 MG Enteric Coated Tablet" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RXNORM">
+                      <originalText>Aspirin - 81mg by mouth once daily<reference value="#medinfo11"/></originalText>
+                    </code>
+                  </manufacturedMaterial>
+                </manufacturedProduct>
+              </consumable>
+            </substanceAdministration>
+          </entry>
+          <entry typeCode="DRIV">
+            <substanceAdministration classCode="SBADM" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
+              <id root="6dc89300-ff31-486b-b862-060c16517d60"/>
+              <text>Lopressor - 50mg by mouth twice daily</text>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="20121101"/>
+                <high value="20121231"/>
+              </effectiveTime>
+              <effectiveTime xsi:type="PIVL_TS" institutionSpecified="true" operator="A">
+                <period value="12" unit="h"/>
+              </effectiveTime>
+              <routeCode code="C38288" displayName="oral" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="Medication Route FDA"/>
+              <doseQuantity value="1"/>
+              <administrationUnitCode code="C42998" displayName="tablet" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="Medication Route FDA"/>
+              <consumable>
+                <manufacturedProduct classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.23"/>
+                  <id nullFlavor="UNK"/>
+                  <manufacturedMaterial>
+                    <code code="866514" displayName="Metoprolol Tartrate 50 MG Oral Tablet" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RXNORM">
+                      <originalText>Lopressor - 50mg by mouth twice daily<reference value="#medinfo12"/></originalText>
+                    </code>
+                  </manufacturedMaterial>
+                </manufacturedProduct>
+              </consumable>
+            </substanceAdministration>
+          </entry>
+          <entry typeCode="DRIV">
+            <substanceAdministration classCode="SBADM" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
+              <id root="87386f99-3730-492c-8d4a-c52233f6551c"/>
+              <text>Flomax - 0.4mg by mouth once daily</text>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="20121101"/>
+                <high value="20121231"/>
+              </effectiveTime>
+              <effectiveTime xsi:type="PIVL_TS" institutionSpecified="true" operator="A">
+                <period value="24" unit="h"/>
+              </effectiveTime>
+              <routeCode code="C38288" displayName="oral" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="Medication Route FDA"/>
+              <doseQuantity value="1"/>
+              <administrationUnitCode code="C42998" displayName="tablet" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="Medication Route FDA"/>
+              <consumable>
+                <manufacturedProduct classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.23"/>
+                  <id nullFlavor="UNK"/>
+                  <manufacturedMaterial>
+                    <code code="863671" displayName="Flomax 0.4 MG Oral Capsule" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RXNORM">
+                      <originalText>Flomax - 0.4mg by mouth once daily<reference value="#medinfo13"/></originalText>
+                    </code>
+                  </manufacturedMaterial>
+                </manufacturedProduct>
+              </consumable>
+            </substanceAdministration>
+          </entry>
+          <entry typeCode="DRIV">
+            <substanceAdministration classCode="SBADM" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
+              <id root="7005d27f-cd00-43e4-b980-ff3fa65012b4"/>
+              <text>Proscar - 5mg by mouth once daily</text>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="20121101"/>
+                <high value="20121231"/>
+              </effectiveTime>
+              <effectiveTime xsi:type="PIVL_TS" institutionSpecified="true" operator="A">
+                <period value="24" unit="h"/>
+              </effectiveTime>
+              <routeCode code="C38288" displayName="oral" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="Medication Route FDA"/>
+              <doseQuantity value="1"/>
+              <administrationUnitCode code="C42998" displayName="tablet" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="Medication Route FDA"/>
+              <consumable>
+                <manufacturedProduct classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.23"/>
+                  <id nullFlavor="UNK"/>
+                  <manufacturedMaterial>
+                    <code code="201961" displayName="Proscar 5 MG Oral Tablet" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RXNORM">
+                      <originalText>Proscar - 5mg by mouth once daily<reference value="#medinfo14"/></originalText>
+                    </code>
+                  </manufacturedMaterial>
+                </manufacturedProduct>
+              </consumable>
+            </substanceAdministration>
+          </entry>
+          <entry typeCode="DRIV">
+            <substanceAdministration classCode="SBADM" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
+              <id root="5f14d454-1af7-44c8-9bb8-c6226476b328"/>
+              <text>Neurontin - 300mg by mouth three times daily</text>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="20121101"/>
+                <high value="20121231"/>
+              </effectiveTime>
+              <effectiveTime xsi:type="PIVL_TS" institutionSpecified="true" operator="A">
+                <period value="8" unit="h"/>
+              </effectiveTime>
+              <routeCode code="C38288" displayName="oral" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="Medication Route FDA"/>
+              <doseQuantity value="1"/>
+              <administrationUnitCode code="C42998" displayName="tablet" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="Medication Route FDA"/>
+              <consumable>
+                <manufacturedProduct classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.23"/>
+                  <id nullFlavor="UNK"/>
+                  <manufacturedMaterial>
+                    <code code="105029" displayName="Neurontin 300 MG Oral Capsule" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RXNORM">
+                      <originalText>Neurontin - 300mg by mouth three times daily<reference value="#medinfo15"/></originalText>
+                    </code>
+                  </manufacturedMaterial>
+                </manufacturedProduct>
+              </consumable>
+            </substanceAdministration>
+          </entry>
+          <entry typeCode="DRIV">
+            <substanceAdministration classCode="SBADM" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
+              <id root="7546cefa-638c-4238-acc4-befe786a5c0c"/>
+              <text>Ativan - 1mg by mouth three times daily as needed for irritability</text>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="20121101"/>
+                <high value="20121231"/>
+              </effectiveTime>
+              <effectiveTime xsi:type="PIVL_TS" institutionSpecified="true" operator="A">
+                <period value="8" unit="h"/>
+              </effectiveTime>
+              <routeCode code="C38288" displayName="oral" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="Medication Route FDA"/>
+              <doseQuantity value="1"/>
+              <administrationUnitCode code="C42998" displayName="tablet" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="Medication Route FDA"/>
+              <consumable>
+                <manufacturedProduct classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.23"/>
+                  <id nullFlavor="UNK"/>
+                  <manufacturedMaterial>
+                    <code code="197900" displayName="Lorazepam 0.5 MG Oral Tablet" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RXNORM">
+                      <originalText>Ativan - 1mg by mouth three times daily as needed for irritability<reference value="#medinfo16"/></originalText>
+                    </code>
+                  </manufacturedMaterial>
+                </manufacturedProduct>
+              </consumable>
+            </substanceAdministration>
+          </entry>
+          <entry typeCode="DRIV">
+            <substanceAdministration classCode="SBADM" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
+              <id root="308d05eb-a29d-4a59-a9ff-5936e09304ca"/>
+              <text>miodarone - 200mg by mouth two times daily</text>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="20121101"/>
+                <high value="20121231"/>
+              </effectiveTime>
+              <effectiveTime xsi:type="PIVL_TS" institutionSpecified="true" operator="A">
+                <period value="12" unit="h"/>
+              </effectiveTime>
+              <routeCode code="C38288" displayName="oral" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="Medication Route FDA"/>
+              <doseQuantity value="1"/>
+              <administrationUnitCode code="C42998" displayName="tablet" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="Medication Route FDA"/>
+              <consumable>
+                <manufacturedProduct classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.23"/>
+                  <id nullFlavor="UNK"/>
+                  <manufacturedMaterial>
+                    <code code="833530" displayName="Cordarone 200 MG Oral Tablet" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RXNORM">
+                      <originalText>miodarone - 200mg by mouth two times daily<reference value="#medinfo17"/></originalText>
+                    </code>
+                  </manufacturedMaterial>
+                </manufacturedProduct>
+              </consumable>
+            </substanceAdministration>
+          </entry>
+          <entry typeCode="DRIV">
+            <substanceAdministration classCode="SBADM" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
+              <id root="cd8215fd-a9d2-484d-86ad-2105272dc9c2"/>
+              <text>Coumadin - 5mg by mouth every other day starting 11/1/2012</text>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="20121101"/>
+                <high value="20121231"/>
+              </effectiveTime>
+              <effectiveTime xsi:type="PIVL_TS" institutionSpecified="true" operator="A">
+                <period value="2" unit="d"/>
+              </effectiveTime>
+              <routeCode code="C38288" displayName="oral" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="Medication Route FDA"/>
+              <doseQuantity value="1"/>
+              <administrationUnitCode code="C42998" displayName="tablet" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="Medication Route FDA"/>
+              <consumable>
+                <manufacturedProduct classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.23"/>
+                  <id nullFlavor="UNK"/>
+                  <manufacturedMaterial>
+                    <code code="855332" displayName="Warfarin Sodium 5 MG Oral Tablet" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RXNORM">
+                      <originalText>Coumadin - 5mg by mouth every other day starting 11/1/2012<reference value="#medinfo18"/></originalText>
+                    </code>
+                  </manufacturedMaterial>
+                </manufacturedProduct>
+              </consumable>
+            </substanceAdministration>
+          </entry>
+          <entry typeCode="DRIV">
+            <substanceAdministration classCode="SBADM" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
+              <id root="eba0c8b5-098d-4e0b-aaca-f47e54ab0d4e"/>
+              <text>Coumadin - 2.5mg by mouth every other day starting 11/2/2012</text>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="20121101"/>
+                <high value="20121231"/>
+              </effectiveTime>
+              <effectiveTime xsi:type="PIVL_TS" institutionSpecified="true" operator="A">
+                <period value="2" unit="d"/>
+              </effectiveTime>
+              <routeCode code="C38288" displayName="oral" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="Medication Route FDA"/>
+              <doseQuantity value="1"/>
+              <administrationUnitCode code="C42998" displayName="tablet" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="Medication Route FDA"/>
+              <consumable>
+                <manufacturedProduct classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.23"/>
+                  <id nullFlavor="UNK"/>
+                  <manufacturedMaterial>
+                    <code code="855312" displayName="Warfarin Sodium 2.5 MG Oral Tablet" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RXNORM">
+                      <originalText>Coumadin - 2.5mg by mouth every other day starting 11/2/2012<reference value="#medinfo19"/></originalText>
+                    </code>
+                  </manufacturedMaterial>
+                </manufacturedProduct>
+              </consumable>
+            </substanceAdministration>
+          </entry>
+          <entry typeCode="DRIV">
+            <substanceAdministration classCode="SBADM" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
+              <id root="15402969-f45c-4723-b4cd-e5a1e7c7075c"/>
+              <text>Ambien - 5mg by mouth once daily before bed</text>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="20121101"/>
+                <high value="20121231"/>
+              </effectiveTime>
+              <routeCode code="C38288" displayName="oral" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="Medication Route FDA"/>
+              <doseQuantity value="1"/>
+              <administrationUnitCode code="C42998" displayName="tablet" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="Medication Route FDA"/>
+              <consumable>
+                <manufacturedProduct classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.23"/>
+                  <id nullFlavor="UNK"/>
+                  <manufacturedMaterial>
+                    <code code="854878" displayName="Ambien 5 MG Oral Tablet" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RXNORM">
+                      <originalText>Ambien - 5mg by mouth once daily before bed<reference value="#medinfo20"/></originalText>
+                    </code>
+                  </manufacturedMaterial>
+                </manufacturedProduct>
+              </consumable>
+            </substanceAdministration>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.22.2.5"/>
+          <templateId root="2.16.840.1.113883.10.20.22.2.5.1"/>
+          <code code="11450-4" displayName="Problem List" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+          <title>Problem List</title>
+          <text>
+            <table>
+              <thead>
+                <tr>
+                  <th colspan="2">Problems</th>
+                </tr>
+                <tr>
+                  <th>Condition</th>
+                  <th>Severity</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>No Data Available</td>
+                  <td>No Data Available</td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td>No Data Available</td>
+                  <td>No Data Available</td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td>No Data Available</td>
+                  <td>No Data Available</td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td>No Data Available</td>
+                  <td>No Data Available</td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td>No Data Available</td>
+                  <td>No Data Available</td>
+                </tr>
+              </tbody>
+            </table>
+          </text>
+          <entry typeCode="DRIV">
+            <act classCode="ACT" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.3"/>
+              <id root="9ca4cb51-5340-4c7b-a7c0-7ce0f58145b2"/>
+              <code code="CONC" displayName="Concern" codeSystem="2.16.840.1.113883.5.6" codeSystemName="HL7ActClass"/>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="20050501"/>
+              </effectiveTime>
+              <entryRelationship typeCode="SUBJ">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.4"/>
+                  <id root="84a64e5c-eeff-4447-95b5-a0b754967ab7"/>
+                  <code nullFlavor="UNK"/>
+                  <text>
+                    <reference value="#problem1"/>
+                  </text>
+                  <statusCode code="completed"/>
+                  <effectiveTime>
+                    <low value="20050501"/>
+                  </effectiveTime>
+                  <value xsi:type="CD" code="5962100" displayName="Essential Hypertension" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
+                </observation>
+              </entryRelationship>
+            </act>
+          </entry>
+          <entry typeCode="DRIV">
+            <act classCode="ACT" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.3"/>
+              <id root="9464c61e-91eb-4abf-9a5c-cb8811151f2a"/>
+              <code code="CONC" displayName="Concern" codeSystem="2.16.840.1.113883.5.6" codeSystemName="HL7ActClass"/>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="20050501"/>
+              </effectiveTime>
+              <entryRelationship typeCode="SUBJ">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.4"/>
+                  <id root="93f6e544-1d11-45cd-b760-cabeb40f5be0"/>
+                  <code nullFlavor="UNK"/>
+                  <text>
+                    <reference value="#problem2"/>
+                  </text>
+                  <statusCode code="completed"/>
+                  <effectiveTime>
+                    <low value="20050501"/>
+                  </effectiveTime>
+                  <value xsi:type="CD" code="5582204" displayName="Hyperlipidemia" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
+                </observation>
+              </entryRelationship>
+            </act>
+          </entry>
+          <entry typeCode="DRIV">
+            <act classCode="ACT" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.3"/>
+              <id root="ac6fa398-0388-4565-ae8d-e3d69590e18b"/>
+              <code code="CONC" displayName="Concern" codeSystem="2.16.840.1.113883.5.6" codeSystemName="HL7ActClass"/>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="20081101"/>
+              </effectiveTime>
+              <entryRelationship typeCode="SUBJ">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.4"/>
+                  <id root="904b119d-a238-4cb9-8e7a-71d5ea268456"/>
+                  <code nullFlavor="UNK"/>
+                  <text>
+                    <reference value="#problem3"/>
+                  </text>
+                  <statusCode code="completed"/>
+                  <effectiveTime>
+                    <low value="20081101"/>
+                  </effectiveTime>
+                  <value xsi:type="CD" code="44054006" displayName="Diabetes Mellitus Type II" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
+                </observation>
+              </entryRelationship>
+            </act>
+          </entry>
+          <entry typeCode="DRIV">
+            <act classCode="ACT" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.3"/>
+              <id root="c5354465-bc7d-4968-9fea-67d659a3f389"/>
+              <code code="CONC" displayName="Concern" codeSystem="2.16.840.1.113883.5.6" codeSystemName="HL7ActClass"/>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="20090101"/>
+              </effectiveTime>
+              <entryRelationship typeCode="SUBJ">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.4"/>
+                  <id root="4a658e81-3d8e-4980-bc33-4af1b5c65a0e"/>
+                  <code nullFlavor="UNK"/>
+                  <text>
+                    <reference value="#problem4"/>
+                  </text>
+                  <statusCode code="completed"/>
+                  <effectiveTime>
+                    <low value="20090101"/>
+                  </effectiveTime>
+                  <value xsi:type="CD" code="433144002" displayName="Chronic Kidney Disease Stage III" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
+                </observation>
+              </entryRelationship>
+            </act>
+          </entry>
+          <entry typeCode="DRIV">
+            <act classCode="ACT" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.3"/>
+              <id root="16e90bd4-3954-44fd-a447-5df452d1171a"/>
+              <code code="CONC" displayName="Concern" codeSystem="2.16.840.1.113883.5.6" codeSystemName="HL7ActClass"/>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="20061101"/>
+              </effectiveTime>
+              <entryRelationship typeCode="SUBJ">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.4"/>
+                  <id root="cc1308af-6bca-4ea7-8236-6fd115753b2f"/>
+                  <code nullFlavor="UNK"/>
+                  <text>
+                    <reference value="#problem5"/>
+                  </text>
+                  <statusCode code="completed"/>
+                  <effectiveTime>
+                    <low value="20061101"/>
+                  </effectiveTime>
+                  <value xsi:type="CD" code="40930008" displayName="Hypothyroidism" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
+                </observation>
+              </entryRelationship>
+            </act>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.22.2.7"/>
+          <templateId root="2.16.840.1.113883.10.20.22.2.7.1"/>
+          <code code="47519-4" displayName="History of Procedures" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+          <title>History of Procedures</title>
+          <text>
+            <table>
+              <thead>
+                <tr>
+                  <th colspan="5">Procedures</th>
+                </tr>
+                <tr>
+                  <th>Service</th>
+                  <th>Procedure code</th>
+                  <th>Service date</th>
+                  <th>Servicing provider</th>
+                  <th>Phone#</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>No Data Available</td>
+                  <td>No Data Available</td>
+                  <td>No Data Available</td>
+                  <td>No Data Available</td>
+                  <td>No Data Available</td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td>No Data Available</td>
+                  <td>No Data Available</td>
+                  <td>No Data Available</td>
+                  <td>No Data Available</td>
+                  <td>No Data Available</td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td>No Data Available</td>
+                  <td>No Data Available</td>
+                  <td>No Data Available</td>
+                  <td>No Data Available</td>
+                  <td>No Data Available</td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td>No Data Available</td>
+                  <td>No Data Available</td>
+                  <td>No Data Available</td>
+                  <td>No Data Available</td>
+                  <td>No Data Available</td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td>No Data Available</td>
+                  <td>No Data Available</td>
+                  <td>No Data Available</td>
+                  <td>No Data Available</td>
+                  <td>No Data Available</td>
+                </tr>
+              </tbody>
+            </table>
+          </text>
+          <entry typeCode="DRIV">
+            <procedure classCode="PROC" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.14"/>
+              <id root="ff23c225-e011-486a-a807-c2a6e572ecf7"/>
+              <code code="49038010" displayName="CT Scan Thorax" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
+                <originalText>
+                  <reference value="#procedure1"/>
+                </originalText>
+              </code>
+              <statusCode code="Completed"/>
+              <effectiveTime>
+                <low value="20121015"/>
+                <high value="20121015"/>
+              </effectiveTime>
+            </procedure>
+          </entry>
+          <entry typeCode="DRIV">
+            <procedure classCode="PROC" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.14"/>
+              <id root="97502608-440c-4ec1-9d8a-329a6ae11ac0"/>
+              <code code="47600" displayName="Counselling" codeSystem="2.16.840.1.113883.6.12" codeSystemName="CPT">
+                <originalText>
+                  <reference value="#procedure2"/>
+                </originalText>
+              </code>
+              <statusCode code="Completed"/>
+              <effectiveTime>
+                <center value="20060601"/>
+              </effectiveTime>
+            </procedure>
+          </entry>
+          <entry typeCode="DRIV">
+            <procedure classCode="PROC" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.14"/>
+              <id root="76be3bd8-b3cc-48cf-bb78-ecccd4cb5353"/>
+              <code code="66983" displayName="Psychotherapy" codeSystem="2.16.840.1.113883.6.12" codeSystemName="CPT">
+                <originalText>
+                  <reference value="#procedure3"/>
+                </originalText>
+              </code>
+              <statusCode code="Completed"/>
+              <effectiveTime>
+                <center value="20040201"/>
+              </effectiveTime>
+            </procedure>
+          </entry>
+          <entry typeCode="DRIV">
+            <procedure classCode="PROC" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.14"/>
+              <id root="8adde4fa-20ae-4db5-a5cb-9942f0695c76"/>
+              <code code="37205" displayName="Bone Scan" codeSystem="2.16.840.1.113883.6.12" codeSystemName="CPT">
+                <originalText>
+                  <reference value="#procedure4"/>
+                </originalText>
+              </code>
+              <statusCode code="Completed"/>
+              <effectiveTime>
+                <center value="20020801"/>
+              </effectiveTime>
+            </procedure>
+          </entry>
+          <entry typeCode="DRIV">
+            <procedure classCode="PROC" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.14"/>
+              <id root="7f12ca52-8632-4559-a994-8701722cb01b"/>
+              <code code="33512" displayName="Modified radical mastectomy" codeSystem="2.16.840.1.113883.6.12" codeSystemName="CPT">
+                <originalText>
+                  <reference value="#procedure5"/>
+                </originalText>
+              </code>
+              <statusCode code="Completed"/>
+              <effectiveTime>
+                <center value="19971101"/>
+              </effectiveTime>
+            </procedure>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.22.2.3"/>
+          <templateId root="2.16.840.1.113883.10.20.22.2.3.1"/>
+          <code code="30954-2" displayName="Relevant diagnostic tests and/or laboratory data" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+          <title>Relevant diagnostic tests and/or laboratory data</title>
+          <text>
+            <table>
+              <thead>
+                <tr>
+                  <th colspan="7">Laboratory Results</th>
+                </tr>
+                <tr>
+                  <th>Test</th>
+                  <th>Result</th>
+                  <th>Units</th>
+                  <th>Ref low</th>
+                  <th>Ref high</th>
+                  <th>Date</th>
+                  <th>Source</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td colspan="7">No Data Available</td>
+                </tr>
+                <tr>
+                  <td>No Data Available</td>
+                  <td>6</td>
+                  <td>m[IU]/L</td>
+                  <td>No Data Available</td>
+                  <td>No Data Available</td>
+                  <td>No Data Available</td>
+                  <td>No Data Available</td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td colspan="7">No Data Available</td>
+                </tr>
+                <tr>
+                  <td>No Data Available</td>
+                  <td>8</td>
+                  <td>%</td>
+                  <td>No Data Available</td>
+                  <td>No Data Available</td>
+                  <td>No Data Available</td>
+                  <td>No Data Available</td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td colspan="7">No Data Available</td>
+                </tr>
+                <tr>
+                  <td>No Data Available</td>
+                  <td>1.5</td>
+                  <td>mg/dL</td>
+                  <td>No Data Available</td>
+                  <td>No Data Available</td>
+                  <td>No Data Available</td>
+                  <td>No Data Available</td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td colspan="7">No Data Available</td>
+                </tr>
+                <tr>
+                  <td>No Data Available</td>
+                  <td>1.5</td>
+                  <td>1</td>
+                  <td>No Data Available</td>
+                  <td>No Data Available</td>
+                  <td>No Data Available</td>
+                  <td>No Data Available</td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td colspan="7">No Data Available</td>
+                </tr>
+                <tr>
+                  <td>No Data Available</td>
+                  <td>55</td>
+                  <td>%</td>
+                  <td>No Data Available</td>
+                  <td>No Data Available</td>
+                  <td>No Data Available</td>
+                  <td>No Data Available</td>
+                </tr>
+              </tbody>
+            </table>
+          </text>
+          <entry typeCode="DRIV">
+            <organizer classCode="BATTERY" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.1"/>
+              <id root="ce19d2be-3d3b-44ea-95f1-5a0a04586377"/>
+              <code code="11579-0" displayName="Thyrotropin [Units/volume] in Serum or Plasma by Detection limit less than or equal to 0.05 mIU/L" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+              <statusCode code="completed"/>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+                  <id root="1331eea1-3efe-497e-96bc-de56796a253d"/>
+                  <code code="3016-3" displayName="Thyrotropin [Units/volume] in Serum or Plasma" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                  <text>
+                    <reference value="#result1"/>
+                  </text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20121126"/>
+                  <value xsi:type="PQ" value="6" unit="m[IU]/L"/>
+                  <interpretationCode code="A" codeSystem="2.16.840.1.113883.5.83" displayName="abnormal" codeSystemName="ObservationInterpretation"/>
+                  <interpretationCode code="HH" codeSystem="2.16.840.1.113883.5.83" displayName="high alert" codeSystemName="ObservationInterpretation"/>
+                  <referenceRange>
+                    <observationRange>
+                      <text>normal: 0.29–5.11 IU/ml</text>
+                    </observationRange>
+                  </referenceRange>
+                </observation>
+              </component>
+            </organizer>
+          </entry>
+          <entry typeCode="DRIV">
+            <organizer classCode="BATTERY" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.1"/>
+              <id root="ce19d2be-3d3b-44ea-95f1-5a0a04586377"/>
+              <code code="4548-4" displayName="Hemoglobin A1c/Hemoglobin.total in Blood" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+              <statusCode code="completed"/>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+                  <id root="dc16a671-c8f7-4125-a3f6-c8787606f576"/>
+                  <code code="4548-4" displayName="Hemoglobin A1c/Hemoglobin.total in Blood" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                  <text>
+                    <reference value="#result2"/>
+                  </text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20121126"/>
+                  <value xsi:type="PQ" value="8" unit="%"/>
+                  <interpretationCode code="A" codeSystem="2.16.840.1.113883.5.83" displayName="abnormal" codeSystemName="ObservationInterpretation"/>
+                  <interpretationCode code="HH" codeSystem="2.16.840.1.113883.5.83" displayName="high alert" codeSystemName="ObservationInterpretation"/>
+                  <referenceRange>
+                    <observationRange>
+                      <text>normal: 4.0-5.6%</text>
+                    </observationRange>
+                  </referenceRange>
+                </observation>
+              </component>
+            </organizer>
+          </entry>
+          <entry typeCode="DRIV">
+            <organizer classCode="BATTERY" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.1"/>
+              <id root="ce19d2be-3d3b-44ea-95f1-5a0a04586377"/>
+              <code code="2160-0" displayName="Creatinine [Mass/volume] in Serum or Plasma" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+              <statusCode code="completed"/>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+                  <id root="9cd43fa7-db31-4c29-ab30-83f92fdcaa20"/>
+                  <code code="2160-0" displayName="Creatinine [Mass/volume] in Serum or Plasma" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                  <text>
+                    <reference value="#result3"/>
+                  </text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20121126"/>
+                  <value xsi:type="PQ" value="1.5" unit="mg/dL"/>
+                  <interpretationCode code="A" codeSystem="2.16.840.1.113883.5.83" displayName="abnormal" codeSystemName="ObservationInterpretation"/>
+                  <referenceRange>
+                    <observationRange>
+                      <text>normal: below 1.5 mg/dL</text>
+                    </observationRange>
+                  </referenceRange>
+                </observation>
+              </component>
+            </organizer>
+          </entry>
+          <entry typeCode="DRIV">
+            <organizer classCode="BATTERY" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.1"/>
+              <id root="ce19d2be-3d3b-44ea-95f1-5a0a04586377"/>
+              <code code="6301-6" displayName="INR in Platelet poor plasma by Coagulation assay" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+              <statusCode code="completed"/>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+                  <id root="78df60b1-daf7-4838-b509-ec3a3f4116c1"/>
+                  <code code="6301-6" displayName="INR in Platelet poor plasma by Coagulation assay" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                  <text>
+                    <reference value="#result4"/>
+                  </text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20121126"/>
+                  <value xsi:type="PQ" value="1.5" unit="1"/>
+                  <interpretationCode code="A" codeSystem="2.16.840.1.113883.5.83" displayName="abnormal" codeSystemName="ObservationInterpretation"/>
+                  <interpretationCode code="HH" codeSystem="2.16.840.1.113883.5.83" displayName="high alert" codeSystemName="ObservationInterpretation"/>
+                  <referenceRange>
+                    <observationRange>
+                      <text>Normal reference range 1.0-1.5; Targeted INR 2.0-3.0</text>
+                    </observationRange>
+                  </referenceRange>
+                </observation>
+              </component>
+            </organizer>
+          </entry>
+          <entry typeCode="DRIV">
+            <organizer classCode="BATTERY" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.1"/>
+              <id root="ce19d2be-3d3b-44ea-95f1-5a0a04586377"/>
+              <code code="34552-0" displayName="CT SCAN" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+              <statusCode code="completed"/>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+                  <id root="aaa00f9e-0154-4eaa-be85-aeb34169f06a"/>
+                  <code code="18041-4" displayName="CT SCAN" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                  <text>
+                    <reference value="#result5"/>
+                  </text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20121126"/>
+                  <value xsi:type="PQ" value="55" unit="%"/>
+                  <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83" displayName="normal" codeSystemName="ObservationInterpretation"/>
+                </observation>
+              </component>
+            </organizer>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.22.2.22"/>
+          <templateId root="2.16.840.1.113883.10.20.22.2.22.1"/>
+          <code code="46240-8" displayName="Encounters" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+          <title>Encounters</title>
+          <text>Not Available</text>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.22.2.2"/>
+          <templateId root="2.16.840.1.113883.10.20.22.2.2.1"/>
+          <code code="11369-6" displayName="Immunizations" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+          <title>Immunizations</title>
+          <entry typeCode="DRIV">
+            <substanceAdministration classCode="SBADM" moodCode="EVN" negationInd="true">
+              <templateId root="2.16.840.1.113883.10.20.22.4.52"/>
+              <id root="b82150ba-bc2f-47a2-947c-930e3b4a3a5b"/>
+              <text>
+                <reference value="#immunization1"/>
+              </text>
+              <statusCode code="completed"/>
+              <effectiveTime value="20121126"/>
+              <consumable>
+                <manufacturedProduct classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.54"/>
+                  <id nullFlavor="UNK"/>
+                  <manufacturedMaterial>
+                    <code code="140" displayName="Influenza, seasonal, injectable, preservative free" codeSystem="2.16.840.1.113883.12.292" codeSystemName="CVX">
+                      <originalText>
+                        <reference value="#imminfo1"/>
+                      </originalText>
+                    </code>
+                  </manufacturedMaterial>
+                  <manufacturerOrganization>
+                    <name>Influenza Vaccine Company</name>
+                  </manufacturerOrganization>
+                </manufacturedProduct>
+              </consumable>
+            </substanceAdministration>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.22.2.18"/>
+          <code code="48768-6" displayName="Payers" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+          <title>Payers</title>
+          <text>Not Available</text>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.22.2.10"/>
+          <code code="18776-5" displayName="Plan of Care" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+          <title>Plan of Care</title>
+          <text>Not Available</text>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.22.2.17"/>
+          <code code="29762-2" displayName="Social History" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+          <title>Social History</title>
+          <entry typeCode="DRIV">
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.78"/>
+              <id nullFlavor="UNK"/>
+              <code code="ASSERTION" displayName="Assertion" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode"/>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <high value="1997"/>
+              </effectiveTime>
+              <value xsi:type="CD" displayName="former smoker" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
+            </observation>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.22.2.4"/>
+          <templateId root="2.16.840.1.113883.10.20.22.2.4.1"/>
+          <code code="8716-3" displayName="Vital Signs" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+          <title>Vital Signs</title>
+          <text>Not Available</text>
+        </section>
+      </component>
+    </structuredBody>
+  </component>
+</ClinicalDocument>
